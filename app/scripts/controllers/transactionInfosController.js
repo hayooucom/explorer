@@ -29,7 +29,7 @@ angular.module('ethExplorer')
                         $scope.from = result.from;
                         $scope.gas = result.gas;
                         //$scope.gasPrice = result.gasPrice.c[0] + " WEI";
-                        $scope.gasPrice = web3.fromWei(result.gasPrice, "ether").toFormat(10) + " ETH";
+                        $scope.gasPrice = web3.fromWei(result.gasPrice, "ether").toFormat(10) + " GTC";
                         $scope.hash = result.hash;
                         $scope.input = result.input; // that's a string
                         $scope.nonce = result.nonce;
@@ -37,7 +37,7 @@ angular.module('ethExplorer')
                         $scope.transactionIndex = result.transactionIndex;
                         //$scope.ethValue = web3.fromWei(result.value[0], "ether"); Newer method but has ""
                         $scope.ethValue = result.value.c[0] / 10000;
-                        $scope.txprice = web3.fromWei(result.gas * result.gasPrice, "ether") + " ETH";
+                        $scope.txprice = web3.fromWei(result.gas * result.gasPrice, "ether") + " GTC";
                         if (!(!$scope.blockNumber)) {
                             $scope.conf = number - $scope.blockNumber;
                             if ($scope.conf === 0) {
