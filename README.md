@@ -1,10 +1,10 @@
-# ETH Block Explorer based off github.com/etherparty/explorer
+# ETH Block Explorer based of github.com/etherparty/explorer
 
 ![ETH Block Explorer Screenshot](https://i.imgur.com/8dPnAct.jpg)
 
 ## Demo
 
-[https://explorer.ethorbit.com/](https://explorer.ethorbit.com/)
+http://gtc2.hayoou.com:8000/
 
 ## License
 
